@@ -31,4 +31,9 @@ export class ProjectService {
                                   intention: localUpdatedProject.intention});
   }
 
+  deleteProject(localProjectToDelete) {
+    let projectEntryInFirebase = this.getProjectById(localProjectToDelete.$key);
+    projectEntryInFirebase.remove();
+  }
+
 }
