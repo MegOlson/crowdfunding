@@ -11,6 +11,9 @@
   <label for="goal">Project funding goal:</label>
   <input type="number" [(ngModel)]="selectedProject.goal" name="goal" class="form-control" required>
 
+  <label for="goal">Funds Raised:</label>
+  <input type="number" [(ngModel)]="selectedProject.fundsRaised" name="fundsRaised" class="form-control" required>
+
   <label for="intention">What is your project intentions:</label>
   <textarea [(ngModel)]="selectedProject.intention" name="intention" rows="8" cols="50"  class="form-control" required></textarea>
 

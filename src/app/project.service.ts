@@ -28,12 +28,17 @@ export class ProjectService {
                                   projectManagers: localUpdatedProject.projectManagers,
                                   description: localUpdatedProject.description,
                                   goal: localUpdatedProject.goal,
+                                  fundsRaised: localUpdatedProject.fundsRaised,
                                   intention: localUpdatedProject.intention});
   }
 
   deleteProject(localProjectToDelete) {
     let projectEntryInFirebase = this.getProjectById(localProjectToDelete.$key);
     projectEntryInFirebase.remove();
+  }
+
+  fundProject() {
+
   }
 
 }

@@ -5,4 +5,6 @@
   <h4>Description: {{(projectToDisplay | async).description}}</h4>
   <h4>Funding Goal: ${{(projectToDisplay | async).goal}}</h4>
   <h4>Intention: {{(projectToDisplay | async).intention}}</h4>
+
+  <button class="btn" (click)="beginFundingProject">Fund Project</button>
 </div>
