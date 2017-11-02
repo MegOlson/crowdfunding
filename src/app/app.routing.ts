@@ -6,6 +6,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { AddProjectComponent } from './add-project/add-project.component';
 import { AdminComponent } from './admin/admin.component';
 import { NoFundsListComponent } from './no-funds-list/no-funds-list.component';
+import { FundComponent } from './fund/fund.component';
 
 const appRoutes: Routes = [
   {

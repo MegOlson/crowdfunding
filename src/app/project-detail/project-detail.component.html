@@ -9,3 +9,6 @@
 
   <button class="btn" (click)="beginFundingProject">Fund Project</button>
 </div>
+
+
+<app-fund [fundProject]="(projectToDisplay | async)"></app-fund>

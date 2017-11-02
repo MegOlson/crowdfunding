@@ -14,6 +14,7 @@ import { AdminComponent } from './admin/admin.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
 // import { NoFundsPipe } from './no-funds.pipe';
 import { NoFundsListComponent } from './no-funds-list/no-funds-list.component';
+import { FundComponent } from './fund/fund.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,7 +34,8 @@ export const firebaseConfig = {
     AdminComponent,
     EditProjectComponent,
     // NoFundsPipe,
-    NoFundsListComponent
+    NoFundsListComponent,
+    FundComponent
   ],
   imports: [
     BrowserModule,
