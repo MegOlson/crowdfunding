@@ -4,6 +4,7 @@
   <h5 *ngFor="let manager of (projectToDisplay | async).projectManagers">{{manager}}</h5>
   <h4>Description: {{(projectToDisplay | async).description}}</h4>
   <h4>Funding Goal: ${{(projectToDisplay | async).goal}}</h4>
+  <h4>Funds Raised: ${{(projectToDisplay | async).fundsRaised}}</h4>
   <h4>Intention: {{(projectToDisplay | async).intention}}</h4>
 
   <button class="btn" (click)="beginFundingProject">Fund Project</button>
