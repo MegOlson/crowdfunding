@@ -4,6 +4,6 @@ export class Project {
     public projectManagers: string[],
     public description: string,
     public goal: number,
-    public intention: string,
-    public fundsRaised: number) {}
+    public fundsRaised: string,
+    public intention: number) {}
 }

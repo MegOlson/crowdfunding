@@ -2,10 +2,10 @@
   <label for="name">Name of Project:</label>
   <input #newName class="form-control" required>
 
-  <label for="managers">Who are the project managers:</label>
+  <label for="managers">Project Managers:</label>
   <input #newManagers class="form-control" required>
 
-  <label for="description">Describe project:</label>
+  <label for="description">Project Description:</label>
   <textarea #newDescription rows="8" cols="50" class="form-control"  required></textarea>
 
   <label for="goal">Project funding goal:</label>
@@ -14,7 +14,7 @@
   <label for="fundsRaised">Funds Raised:</label>
   <input type="number" #newFundsRaised  class="form-control" required>
 
-  <label for="intention">What is your project intentions:</label>
+  <label for="intention">WFinancial Intention:</label>
   <textarea #newIntention rows="8" cols="50"  class="form-control" required></textarea>
 
   <button (click)="submitForm(newName.value, newManagers.value, newDescription.value, newGoal.value, newFundsRaised.value, newIntention.value);" class="btn">Add Project</button>
