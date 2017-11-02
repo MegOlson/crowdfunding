@@ -7,6 +7,7 @@ import { AddProjectComponent } from './add-project/add-project.component';
 import { AdminComponent } from './admin/admin.component';
 import { NoFundsListComponent } from './no-funds-list/no-funds-list.component';
 import { FundComponent } from './fund/fund.component';
+import { HighFundsListComponent } from './high-funds-list/high-funds-list.component';
 
 const appRoutes: Routes = [
   {
@@ -32,6 +33,10 @@ const appRoutes: Routes = [
   {
     path: 'noFunds',
     component: NoFundsListComponent
+  },
+  {
+    path: 'highFunds',
+    component: HighFundsListComponent
   }
 ];
 

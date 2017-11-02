@@ -1,6 +1,6 @@
 <h2>Projects:</h2>
 
-<div *ngFor="let project of projects | async | noFunds"  class="panel panel-default">
+<div *ngFor="let project of projects | async | highFunds"  class="panel panel-default">
   <div class="panel-body">
     <h4 (click)="goToProjectPage(project)">{{project.name}}</h4>
   </div>
