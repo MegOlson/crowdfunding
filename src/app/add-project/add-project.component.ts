@@ -17,16 +17,16 @@ export class AddProjectComponent {
   ngOnInit() {
   }
 
-//   submitForm(
-//     name: string,
-//     projectManagers: string,
-//     description: string,
-//     goal: number,
-//     fundsRaised: number,
-//     intention: string
-//   ) {
-//     let newProject: Project = new Project(name, projectManagers.split(","), description, goal, fundsRaised, intention);
-//     this.projectService.addProject(newProject);
-//     this.router.navigate(['projects']);
-//   }
+  submitForm(
+    name: string,
+    projectManagers: string,
+    description: string,
+    goal: number,
+    fundsRaised: number,
+    intention: string
+  ) {
+    let newProject: Project = new Project(name, projectManagers.split(","), description, goal, fundsRaised, intention);
+    this.projectService.addProject(newProject);
+    this.router.navigate(['projects']);
+  }
 }
