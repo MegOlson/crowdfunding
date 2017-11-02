@@ -8,10 +8,10 @@ import { Project } from './project.model';
 export class NoFundsPipe implements PipeTransform {
 
   transform(input: Project[]){
-    var output: Project[] = [];
-    for(let i = 0; i < input.length; i++) {
+    let output: Project[] = [];
+    for(let i = 0; i < input.length; i++){
       if(input[i].fundsRaised <= 0) {
-        output.push(input[i])
+        output.push(input[i]);
       }
     }
     return output;
